@@ -1,0 +1,23 @@
+<div class="form-container">
+  <div class="row">
+    <div class="form-group">
+      <label for="line">Linha:</label>
+      <select id="line" [(ngModel)]="selectedLine" (change)="onLineSelected()">
+        <option value="">Selecione a linha</option>
+        <option *ngFor="let line of lines" [value]="line.id">{{ line.name }}</option>
+      </select>
+    </div>
+
+    <div class="form-group" *ngIf="selectedLine">
+      <label for="trip">Viagem:</label>
+      <select id="trip" [(ngModel)]="selectedTrip" (change)="onTripSelected()">
+        <option value="">Selecione a viagem</option>
+        <option *ngFor="let trip of trips" [value]="trip.id">{{ trip.name }}</option>
+      </select>
+    </div>
+
+    <button (click)="resetMap()">Limpar Mapa</button>
+  </div>
+</div>
+
+<div id="map"></div>

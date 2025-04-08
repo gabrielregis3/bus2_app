@@ -1,0 +1,78 @@
+.popup-btn {
+    padding: 4px 10px;
+    margin: 4px 6px 4px 0;
+    background: linear-gradient(to right, #4a68ff, #3b43d4);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+    white-space: nowrap;
+  }
+  
+  .popup-btn:hover {
+    background: linear-gradient(to right, #3b43d4, #4a68ff);
+  }
+
+  .form-container {
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
+  }
+  
+  label {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+  
+  select {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    height: 32px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: linear-gradient(to right, #4a68ff, #3b43d4);
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 32px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #3b43d4, #4a68ff);
+  }
+  
+  .page-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 16px 40px;
+    background: #f5f7fa;
+  }

@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+}
+
+model Line {
+  id  Int @id
+  code  Int @unique
+  name  String @db.VarChar(255)
+  color String @db.VarChar(50)
+  trips Trip[]
+}
+
+model Trip {
+  id  Int @id
+  line_id Int
+  name  String @db.VarChar(255)
+  path  String @db.Text
+  line  Line   @relation(fields: [line_id], references: [id], onDelete: Cascade)
+  stops Stop[]
+}
+
+model Stop {
+  id  Int @id @default(autoincrement())
+  stop_id Int
+  trip_id Int
+  sequence  Int
+  latitude  Decimal @db.Decimal(10, 8)
+  longitude Decimal @db.Decimal(11, 8)
+  stop_name String  @db.VarChar(255)
+  trip  Trip  @relation(fields: [trip_id], references: [id], onDelete: Cascade)
+}
