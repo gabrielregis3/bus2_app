@@ -114,14 +114,3 @@ ng serve
 
 Usuário: admin
 Senha: admin
-
----
-
-## Funcionalidades
-
-- Listagem de linhas, viagens e paradas
-- Busca por nome de linha, viagem ou parada
-- Visualização de paradas no mapa com Google Maps
-- Exibição de paradas por viagem
-- Exibição de viagens por linha ou parada
-- Documentação da API com Swagger
