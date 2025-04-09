@@ -38,6 +38,11 @@ Instale as dependências do backend:
 ```bash
 npm install
 ```
+Gere o client do Prisma:
+
+```bash
+npx prisma generate
+```
 
 Configure o banco de dados criando um arquivo `.env` com a variável `DATABASE_URL`:
 
@@ -45,7 +50,7 @@ Configure o banco de dados criando um arquivo `.env` com a variável `DATABASE_U
 DATABASE_URL="mysql://usuario:senha@localhost:3306/nome_do_banco"
 ```
 
-## Rode os Scripts SQL: <br>
+## Abra e rode os Scripts SQL: <br>
 `backend/prisma/20250401191657_init/migration.sql` (Para a  criação do banco de dados) <br>`backend/prisma/inserts.sql` (Para popular os dados)
 
 Inicie o servidor backend:
@@ -114,3 +119,13 @@ ng serve
 
 Usuário: admin
 Senha: admin
+
+---
+
+## Funcionalidades
+
+- Listagem de linhas, viagens e paradas
+- Busca por nome de linha, viagem ou parada
+- Visualização de paradas no mapa com Google Maps
+- Exibição de paradas por viagem
+- Exibição de viagens por linha ou parada
