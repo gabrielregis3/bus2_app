@@ -34,7 +34,7 @@ export class StopsController {
   }
 
   @Get('by-trip')
-  async getStopsByTrip(@Query('trip_id') tripId: number) {
+  async getStopsByTrip(@Query('trip_id') tripId?: number) {
     try {
       if (tripId) {
         const response = await this.stopsService.getStopsByTripId(Number(tripId));
@@ -52,7 +52,7 @@ export class StopsController {
   }
 
   @Get('/coordinates/by-trip')
-  async getCoordinatesByTrip(@Query('trip_id') tripId: number) {
+  async getCoordinatesByTrip(@Query('trip_id') tripId?: number) {
     try {
       if (tripId) {
         const response = await this.stopsService.getCoordinatesByTripId(Number(tripId));

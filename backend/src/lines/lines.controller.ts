@@ -10,7 +10,7 @@ export class LinesController {
     try {
       return await this.linesService.getAllLines();
     } catch (error) {
-      throw new Error('Falha ao buscar as viagens');
+      throw new Error('Falha ao buscar as linhas');
     }
   }
 

@@ -52,8 +52,22 @@ export class TripsController {
   }
 
   @Get('by-stop-id') 
-  async getTripsByStopId(@Query('stop_id') stopId: number) {
-    return this.tripsService.getTripsByStopId(Number(stopId));
+  async getTripsByStopId(@Query('stop_id') stopId?: number) {
+    try {
+      if (stopId) {
+      const response = await this.tripsService.getTripsByStopId(Number(stopId)); 
+      
+      if (!response || response.length === 0) {
+        throw new Error('Nenhuma viagem encontrada!');
+      }
+      
+      return response;
+    } else {
+      throw new Error('stop_id é obrigatório');
+    }
+    } catch (error) { 
+      throw error;
+    }
   }
 
   @Get('by-name')
@@ -71,7 +85,7 @@ export class TripsController {
       
     }
     catch (error) {
-      throw new Error('Digite o nome da viagem!.');
+      throw error;
     }
   }
 
