@@ -1,4 +1,4 @@
-# 🚌 Sistema de Visualização de Linhas e Viagens de Ônibus
+# Sistema de Visualização de Linhas e Viagens de Ônibus
 
 Este projeto é uma aplicação fullstack desenvolvida com **NestJS (backend)**, **Angular 19 (frontend)**, **Prisma (ORM)**, **MySQL (banco de dados)** e **Google Maps API**, que permite visualizar linhas de ônibus, viagens e paradas em um mapa interativo. Também inclui documentação automática da API com Swagger.
 
@@ -16,7 +16,7 @@ Este projeto é uma aplicação fullstack desenvolvida com **NestJS (backend)**,
 
 ### Passo a passo para executar o projeto
 
-#### 1. Clone o repositório
+#### Clone o repositório
 
 ```bash
 git clone https://github.com/seu-usuario/seu-repo.git
