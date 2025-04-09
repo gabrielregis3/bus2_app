@@ -117,9 +117,16 @@ ng serve
 
 ### Resumo das URLs:
 
-- **Frontend Angular:** http://localhost:4200  
-- **Backend NestJS:** http://localhost:3000  
-- **Swagger API Docs:** http://localhost:3000/api
+- Frontend Angular: http://localhost:4200  
+- Backend NestJS: http://localhost:3000  
+- Swagger API Docs: http://localhost:3000/api
+
+---
+
+### Credenciais de login:
+
+Usuário: admin
+Senha: admin
 
 ---
 
