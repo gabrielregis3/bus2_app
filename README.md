@@ -19,8 +19,8 @@ Este projeto é uma aplicação fullstack desenvolvida com **NestJS (backend)**,
 #### Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
+git clone https://github.com/gabrielregis3/bus2_app.git
+cd bus2_app
 ```
 
 ---
