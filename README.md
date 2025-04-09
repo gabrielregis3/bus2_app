@@ -81,19 +81,6 @@ Instale as dependências:
 ```bash
 npm install
 ```
-
-Configure o proxy para se comunicar com o backend:
-
-Certifique-se de que o arquivo `proxy.conf.json` existe e contém o seguinte:
-
-```json
-{
-  "/api": {
-    "target": "http://localhost:3000",
-    "secure": false
-  }
-}
-```
 Configure sua chave da Google Maps API:
 
 No arquivo `frontend/src/environments/environment_example.ts`, altere o nome somente para environment.ts e adicione:
