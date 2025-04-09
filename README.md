@@ -122,6 +122,33 @@ Senha: admin
 
 ---
 
+### Testes Automatizados (Jest)
+
+O projeto utiliza o Jest para testes unitários no backend. Os testes criados validam os controllers principais: linhas, paradas e viagens.
+
+Acesse a pasta do backend:
+
+
+```bash
+cd backend
+```
+
+Testes incluídos:
+src/lines/lines.controller.spec.ts – Testa o controller das linhas
+```bash
+npm run test lines.controller
+```
+src/stops/stops.controller.spec.ts – Testa o controller das paradas
+```bash
+npm run test stops.controller
+```
+src/trips/trips.controller.spec.ts – Testa o controller das viagens
+```bash
+npm run test
+```
+
+--- 
+
 ## Funcionalidades
 
 - Listagem de linhas, viagens e paradas
