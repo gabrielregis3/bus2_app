@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { firstValueFrom, Observable } from 'rxjs';
+import { environment } from '../../../environments/environment';
 
 declare var google: any;
 
@@ -168,7 +169,7 @@ export class MapComponent implements OnInit {
   private loadGoogleMaps(): void {
     if (!(window as any).google || !(window as any).google.maps) {
       const script = document.createElement('script');
-      script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCw1oITXD-xg7ctTHIubl9OGI2XHFSQcvM&libraries=places';
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${environment.googleMapsApiKey}&libraries=places`;
       script.async = true;
       script.defer = true;
 
