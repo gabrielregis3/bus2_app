@@ -132,15 +132,15 @@ Acesse a pasta do backend:
 ```bash
 cd backend
 ```
-Testa o controller das linhas
+Testa o controller das linhas:
 ```bash
 npm run test lines.controller
 ```
-Testa o controller das paradas
+Testa o controller das paradas:
 ```bash
 npm run test stops.controller
 ```
-Testa o controller das viagens
+Testa o controller das viagens:
 ```bash
 npm run test trips.controller
 ```
